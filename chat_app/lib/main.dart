@@ -6,7 +6,7 @@ import 'package:scholar_chat/pages/resgister_page.dart';
 
 import 'firebase_options.dart';
 
-void main() async  {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -21,9 +21,9 @@ class ScholarChat extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-       LoginPage.id: (context) => LoginPage(),
+        LoginPage.id: (context) => LoginPage(),
         RegisterPage.id: (context) => RegisterPage(),
-        ChatPage.id : (context) => ChatPage()
+        ChatPage.id: (context) => ChatPage()
       },
       initialRoute: LoginPage.id,
     );
